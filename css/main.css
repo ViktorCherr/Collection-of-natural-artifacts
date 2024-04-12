@@ -665,6 +665,9 @@ footer{
         width: fit-content;
         align-items: center;
     }
+    .swiper-pagination span{
+        margin-right: 25px;
+    }
     .swiper-pagination-bullets{
         width: auto;
         gap: 25px;
