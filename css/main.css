@@ -10,6 +10,9 @@ body{
     min-width: 320px;
     min-height: 100%;
 }
+a{
+    text-decoration: none;
+}
 /* Стили для header и меню начало */
 header{
     background: #1D2F30;
@@ -40,13 +43,16 @@ svg{
     display: flex;
     position: relative;
 }
-.menu-logo svg{
-    width: 65px;
-    height: 20px;
+.menu-logo .menu-logo__icon{
+    /* width: 65px;
+    height: 20px; */
+    color: #fff;
+    font-size: 20px;
 }
 .menu-logo{
     width: 65px;
     margin-right: 130px;
+    text-decoration: none;
 }
 .menu-nav{
     display: flex;
@@ -80,25 +86,26 @@ svg{
     gap: 60px;
     align-items: center;
 }
-.right-menu svg{
-    display: block;
-    fill: #bae249;
-}
 .search-btn{
     border: none;
     background: transparent;
     cursor: pointer;
+}
+.right-menu__icon{
+    color: #bae249;
+    font-size: 20px;
+    transition: all .4s ease;
 }
 .login-btn:focus-visible,
 .right-menu button:focus-visible,
 .menu-nav a:focus-visible{
     outline: 1px solid #83A440;
 }
-.right-menu svg:hover{
-    fill: #91AC46;
+.right-menu__icon:hover{
+    color: #91AC46;
 }
-.right-menu svg:active{
-    fill: #688B05;
+.right-menu__icon:active{
+    color: #688B05;
 }
 /* Стили для header и меню конец*/
 
@@ -279,22 +286,21 @@ svg{
     align-items: center;
     background: transparent;
 }
-.stepper-box button > svg{
-    fill: #899D9D;
+.stepper-box__icon{
+    color: #899D9D;
+    font-size: 20px;
     cursor: pointer;
-    transition-property: fill, transform;
-    transition-duration: .35s;
-    transition-timing-function: ease;
+    transition: all .4s ease;
 }
-.stepper-box button > svg:hover{
-    fill: #bae249;
+.stepper-box__icon:hover{
+    color: #bae249;
     transform: scale(1.2);
 }
 .stepper-box button:focus-visible{
     outline: 1px solid #83A440;
 }
-.stepper-box button > svg:active{
-    fill: #688B05;
+.stepper-box__icon:active{
+    color: #688B05;
 }
 .stepper-box button:disabled{
     pointer-events: none;
@@ -590,22 +596,21 @@ footer{
     gap: 30px;
     margin: 0 -1px;
 }
-.social-net-link{
+.social-nets__link{
     display: flex;
 }
-.social-net-link svg{
-    width: 25px;
-    height: 25px;
-    fill: #899D9D;
-    transition: .35s ease fill;
+.social-nets__icon{
+    font-size: 20px;
+    color: #899D9D;
+    transition: all .35s ease;
 }
-.social-net-link svg:hover{
-    fill: #BAE249;
+.social-nets__icon:hover{
+    color: #BAE249;
 }
-.social-net-link svg:active{
-    fill: #688B05;
+.social-nets__icon:active{
+    color: #688B05;
 }
-.social-net-link:focus-visible{
+.social-nets__link:focus-visible{
     outline: 1px solid #83A440;
 }
 .copyright-box{
